@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.trackapp2.MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/bckgrndImageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/yoga" />
+            <ImageView
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edu"
+                android:id="@+id/bckgrndImageView4"
+                android:layout_width="fill_parent"/>
+            <ImageView
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jog"
+                android:id="@+id/bckgrndImageView2"
+                android:layout_width="fill_parent"/>
+
+
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="  Skip>> "
+            android:textColor="#273746"
+            android:background="#fdfefe"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/skipbutton" />
+
+        <TextView
+            android:text="@string/track_app"
+            android:layout_width="match_parent"
+            android:paddingLeft="100dp"
+            android:layout_height="90dp"
+            android:textSize="50dp"
+            android:background="#abb2b9"
+            android:alpha="0.4"
+            android:textColor="#1c2833"
+            android:paddingTop="10dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="142dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
